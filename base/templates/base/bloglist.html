@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<main class="layout layout--3">
+  <div class="container">
+
+    <!-- Topics Start -->
+    {% include 'base/topics_component.html' %}
+
+    <!-- Topics End -->
+
+    <!-- Room List Start -->
+    <div class="roomList">
+      <div class="mobile-menu">
+        <div class="mobile-menuItems">
+          <a class="btn btn--main btn--pill" href="{% url 'topics' %}">Browse Topics</a>
+        </div>
+      </div>
+
+      <h2 class="room_listing_header">ROOMS</h2>
+
+        <div class="roomList__header">
+          <div>
+            <p>{{blog_count}} Blog available</p>
+          </div>
+
+            {% if request.user.is_staff %}
+                <a class="btn btn--main" href="{% url 'create-blog' %}">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>add</title>
+                    <path
+                      d="M16.943 0.943h-1.885v14.115h-14.115v1.885h14.115v14.115h1.885v-14.115h14.115v-1.885h-14.115v-14.115z">
+                    </path>
+                  </svg>
+                  Create Blog
+                </a>
+            {% endif %}
+        </div>
+
+      {% include 'base/feed_component.html' %}
+
+    </div>
+    <!-- Room List End -->
+
+  </div>
+</main>
+
+{% endblock content %}

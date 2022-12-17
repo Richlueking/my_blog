@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="comment-form">
+     <form action="" method="POST">
+     {% csrf_token %}
+     <input type="text" name="body" placeholder="write your comment here">
+     <button class="comment-btn">Submit</button>
+     </form>
+</div>
+
+</body>
+</html>

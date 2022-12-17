@@ -1,0 +1,23 @@
+{% for blog in blogs %}
+<div class="roomListRoom">
+    <div class="roomListRoom__header">
+        </a>
+        <div class="roomListRoom__actions">
+            <span>{{blog.created|timesince}} ago</span>
+        </div>
+    </div>
+    <div class="roomListRoom__content">
+        <a href="{% url 'blog' blog.id %}">{{blog.description}}</a>
+    </div>
+    <div class="roomListRoom__meta">
+        <a href="#" class="roomListRoom__joined">
+
+            <div class="avatar avatar--medium active">
+                <img src="{{blog.host.avatar.url}}">
+                </div>
+            <span class="host_name"> By {{blog.host.name}}</span>
+        </a>
+        <p class="roomListRoom__topic">{{blog.topic.name}}</p>
+    </div>
+</div>
+{% endfor %}
