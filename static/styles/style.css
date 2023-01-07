@@ -201,7 +201,7 @@ body {
 
 	/* About */
 
- 
+
 
 	#about .about {
 		flex-direction: row;
@@ -352,7 +352,7 @@ a {
 
 .container p {
   font-size: 2rem;
- 
+
 }
 
 .container h2 {
@@ -1502,14 +1502,14 @@ display: none;
   background-color: white;
   margin-bottom: 2em;
   margin-top: 2em;
-} 
+}
 
 .room__topics_topic {
   text-rendering: optimizeLegibility;
   font-size: 4rem;
   color: var(--color-bg);
   background-color: white;
-  
+
 }
 
 .room__conversation {
@@ -1523,7 +1523,7 @@ display: none;
   font-style: oblique;
   color: var(--color-dark);
   border-bottom: 5px solid #327d91;
-  
+
 }
 
 .threads h3 {
@@ -1538,7 +1538,7 @@ display: none;
   border-radius: 0.7rem;
   overflow-y: auto;
   height: 100%;
- 
+
   padding: 0 1rem 0 0;
 }
 
@@ -1553,7 +1553,7 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 
 .thread__top svg {
@@ -1674,7 +1674,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  
+
   background: #101010;
   display: flex;
   flex-direction: column;
